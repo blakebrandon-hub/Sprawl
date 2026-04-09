@@ -66,7 +66,7 @@ NARRATOR_MODEL = os.environ.get("NARRATOR_MODEL", "gemini-3.1-pro-preview")
 
 # Image Generation Model
 # Options: "imagen-4.0-fast-generate-001" | "gpt-image-1.5"
-IMAGE_MODEL = os.environ.get("IMAGE_MODEL", None)
+IMAGE_MODEL = os.environ.get("IMAGE_MODEL", "")
 
 # ─────────────────────────────────────────────
 # API CLIENTS / VERCEL CONFIGURATION ROUTING
