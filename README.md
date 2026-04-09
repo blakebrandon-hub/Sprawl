@@ -1,6 +1,6 @@
 # SPRAWL
 
-> *The city doesn't care about you. GHOST does. Barely.*
+> *The net is vast, the shell is fragile.*
 
 ---
 
