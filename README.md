@@ -24,25 +24,6 @@ It feels like a cyberpunk novel you're writing in real time.
 
 ---
 
-## The Setup (It's Quick)
-
-You need Python, a Flask server, and at least one API key — Anthropic, Google, or OpenAI. The narrator model is swappable; Claude, Gemini, and GPT all work. Optional image generation will paint the current scene on demand.
-
-```bash
-pip install flask flask-cors anthropic openai google-genai
-
-export ANTHROPIC_API_KEY="your-key"
-export NARRATOR_MODEL="claude-sonnet-4-6"
-
-python app.py
-```
-
-Open `http://localhost:5000`. Click **ENTER THE SPRAWL**.
-
-That's it.
-
----
-
 ## The World
 
 The Sprawl has four zones, each with its own pressure:
@@ -85,7 +66,3 @@ Your HP hits 0 — the city wins. It usually does.
 The narrator communicates game state through structured tags hidden in its prose. A custom Glyph Engine parses them client-side — no extra API calls — updating your inventory, faction rep, job status, augment slots, and stat bars in real time. Every 12 exchanges, a lightweight archiving model compresses the session history so long runs stay coherent without burning tokens.
 
 The backend supports four separate game worlds. Sprawl is one of them.
-
----
-
-*Built with Flask, Tone.js, the Web Speech API, and whichever LLM you trust most.*
