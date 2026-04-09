@@ -4,4 +4,4 @@ google-genai
 google-cloud-aiplatform
 gunicorn
 anthropic
-
+openai
