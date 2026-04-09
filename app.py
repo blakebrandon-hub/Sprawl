@@ -86,6 +86,8 @@ openai_client = OpenAI(api_key=openai_key.strip()) if openai_key else None
 
 # Anthropic
 anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
+if anthropic_key == "None":
+    anthropic_key = None 
 anthropic_client = Anthropic(api_key=anthropic_key) if anthropic_key else None
 
 # ─────────────────────────────────────────────
