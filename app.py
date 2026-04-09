@@ -62,11 +62,11 @@ def serve_greywake_static(filename):
 
 # Narrator Model
 # "claude-sonnet-4-6" | "gemini-3.1-pro-preview" | "gpt-5.4"
-NARRATOR_MODEL = os.environ.get("NARRATOR_MODEL", "claude-sonnet-4-6")
+NARRATOR_MODEL = os.environ.get("NARRATOR_MODEL", "gemini-3.1-pro-preview")
 
 # Image Generation Model
 # Options: "imagen-4.0-fast-generate-001" | "gpt-image-1.5"
-IMAGE_MODEL = os.environ.get("IMAGE_MODEL", "gpt-image-1.5")
+IMAGE_MODEL = os.environ.get("IMAGE_MODEL", "imagen-4.0-fast-generate-001")
 
 # ─────────────────────────────────────────────
 # API CLIENTS / VERCEL CONFIGURATION ROUTING
