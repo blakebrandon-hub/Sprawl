@@ -1,7 +1,6 @@
 flask
 flask-cors
 google-genai
-supabase
 google-cloud-aiplatform
 gunicorn
 anthropic
