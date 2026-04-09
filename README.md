@@ -58,11 +58,3 @@ Your Neural Strain hits 100% — GHOST's link collapses mid-sentence.
 Your Trace hits 100% — CorpSec follows the signal back to you.
 
 Your HP hits 0 — the city wins. It usually does.
-
----
-
-## The Technical Part (For the Curious)
-
-The narrator communicates game state through structured tags hidden in its prose. A custom Glyph Engine parses them client-side — no extra API calls — updating your inventory, faction rep, job status, augment slots, and stat bars in real time. Every 12 exchanges, a lightweight archiving model compresses the session history so long runs stay coherent without burning tokens.
-
-The backend supports four separate game worlds. Sprawl is one of them.
