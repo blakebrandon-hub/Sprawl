@@ -69,15 +69,22 @@ NARRATOR_MODEL = os.environ.get("NARRATOR_MODEL", "claude-sonnet-4-6")
 IMAGE_MODEL = os.environ.get("IMAGE_MODEL", "gpt-image-1.5")
 
 # ─────────────────────────────────────────────
-# API CLIENTS
+# API CLIENTS / VERCEL CONFIGURATION ROUTING
 # ─────────────────────────────────────────────
 
+# Gemini
 gemini_key = os.environ.get("GEMINI_API_KEY")
+if gemini_key == "None":
+    gemini_key = None    
 gemini_client = genai.Client(api_key=gemini_key) if gemini_key else None
 
+# OpenAI
 openai_key = os.environ.get("OPENAI_API_KEY")
+if openai_key == "None":
+    openai_key = None  
 openai_client = OpenAI(api_key=openai_key.strip()) if openai_key else None
 
+# Anthropic
 anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
 anthropic_client = Anthropic(api_key=anthropic_key) if anthropic_key else None
 
